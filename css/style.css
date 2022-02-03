@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    height: 2000px;
+}
+
+/* grid-template-colums: 10% auto 10% */
+/* grid-template-colums: auto 80% auto */
+
+/*Descendant Selector */
+.test-class p {
+    color: blue;
+}
+
+/*Child Selector (>)*/
+.test-class > div p em{
+    color: red;
+}
+
+/*Adjacent Sibling Selector (+) */
+div + p {
+    background-color: green;
+}
+
+
+/*General Sibling Selector (~) */
+div ~ p {
+    background-color: yellow;
+}
+
+/* Position */
+
+.blog-post {
+    border: 1px solid black;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    width: 100%;
+
+    position: -webkit-sticky;
+    position: sticky ;
+    top: 20px;
+    
+}
+
+.blog-post * {
+    border: 1px solid blue;
+}
+
+.blog-image {
+    background-color: burlywood;
+}
+
+.blog-content h3 {
+    font-family: 'Supermercado One', cursive;
+}
+
+
+
